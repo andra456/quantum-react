@@ -1,0 +1,90 @@
+// signin
+.box-floating {
+    padding: 30px 40px;
+    margin: 0 auto;
+    border-radius: 5px;
+    position: relative;
+   
+    
+
+}
+
+.box-signin {
+    width: 100%;
+    background: #fff;
+    min-height: 500px;
+    border-radius: 10px;
+    border: solid 1px rgba(0, 0, 0, .08);
+    -webkit-box-shadow: 0 10px 20px 0 rgba(53,64,90,.2);
+    box-shadow: 0 10px 20px 0 rgba(53,64,90,.2);
+    margin-bottom: 40px;
+    padding: 0px;
+    position: absolute;
+    height: 100%;
+    top:0;
+    left: 0;
+    overflow: hidden;
+    .row {
+        height: 100%;
+    }
+    .main {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+
+        .main-box {
+            width: 523px;
+            padding: 30px 60px 0;
+        }
+    }
+    .intorduce{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &::before { 
+            content: '';
+            display: block;
+            background: #f1cdd7;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            position: absolute;
+            
+        }
+    }
+    .ico-success {
+        max-height: 440px;
+        margin-bottom: 20px;
+    }
+    .ui.header.logo {
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        > svg {
+        width: 128px;
+        }
+    }
+    h1 {
+        line-height: 1.5;
+    }
+    .market {
+        position: relative;
+        
+    }
+}
+
+@media (max-width: 991px) {
+    .intorduce{
+        display: none !important;
+    }
+}

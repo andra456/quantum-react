@@ -1,0 +1,81 @@
+.rdt_TableHeader {
+  display: none !important;
+}
+
+.rdt_Table {
+
+  .rdt_TableRow {
+    border-bottom-width :0px !important;
+    height: 100px;
+    min-height: 30px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+
+    .rdt_TableCell {
+      
+    
+    
+
+  }
+
+  
+
+    &:nth-of-type(odd) {
+      color: rgba(0,0,0,0.87);
+      background-color: #ffffff;
+    }
+    &:not(:last-of-type) {
+      border-bottom-width: 0px !important;
+    }
+
+    .action {
+      display: flex;
+      justify-items: flex-end; 
+      a {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        width: 48px;
+        height: calc(100% - 20px);
+        max-height: 14px;
+        border-right: solid 1px rgba(0,0,0,.17);
+
+        &:nth-last-child(1){
+          border-right: solid 0px rgba(0,0,0,.17);
+        }
+
+      }
+    }
+   
+  }
+  
+
+  img.avatar {
+    border-radius: 100%;
+  }
+
+  .rdt_TableHead { 
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+  }
+  .rdt_TableHeadRow {
+  
+    min-height: 20px;
+    height: 48px;
+
+
+    > div {
+    
+      &:nth-last-child(1):after {
+        display: none;
+      }
+    }
+    
+   }
+  
+}
+
+.rdt_Pagination {
+  border: solid 0px !important
+}
